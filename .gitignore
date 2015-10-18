@@ -27,6 +27,9 @@
 *.i*86
 *.x86_64
 *.hex
+append_source_code
+test/t
+test/tt
 
 # Debug files
 *.dSYM/

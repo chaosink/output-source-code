@@ -1,3 +1,8 @@
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+void output_source_code(int argc, char **argv) {
 	int _i_;
 	for(_i_ = 1; _i_ < argc; _i_++)
 		if(!strcmp(argv[_i_], "--output_source_code") || !strcmp(argv[_i_], "--osc")) {
@@ -12,5 +17,6 @@
 			while(size++ != size_all - 4)
 				putchar(fgetc(in));
 			fclose(in);
-			return 0;
+			exit(0);
 		}
+}
